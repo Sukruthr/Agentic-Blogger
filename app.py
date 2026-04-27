@@ -1,7 +1,7 @@
 import uvicorn
 from fastapi import FastAPI, Request
 from src.graphs.graph_builder import GraphBuilder
-from src.llms.groq_llm import GroqLLM
+from src.llms.groq_llm import GroqLLLM
 
 import os
 from dotenv import load_dotenv
@@ -17,7 +17,7 @@ async def generate_blog(request: Request):
     topic = data.get("topic", "")
 
     # get llm onject
-    groqllm = GroqLLM()
+    groqllm = GroqLLLM()
     llm = groqllm.get_llm()
 
     # get graph builder object

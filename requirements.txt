@@ -6,3 +6,4 @@ langgraph
 langgraph-cli[inmem]
 uvicorn
 watchdog
+fastapi

@@ -26,7 +26,7 @@ class BlogNode:
         create the main content for the blog
         """
 
-       if "topic" in state and state["topic"]:
+        if "topic" in state and state["topic"]:
             prompt="""
             You are an expert Blog Content Writer. Use Markdown Formatting. 
             Generate a detailed blog content with detailed breakdown for the {topic}.
